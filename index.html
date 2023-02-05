@@ -17,24 +17,22 @@
     <nav>
 
 
-        <img src="images/517bd27f93ec2fa58b16f0271f23bfdb.jpg" class="logo">
+        <img src="images/517bd27f93ec2fa58b16f0271f23bfdb.jpg" class="logo ">
 
 
         <div class="rightside">
 
-            <img src="images/menu.png" class="menu">
-
-            <img src="images/x-mark.png" class="cut">
+            <img src="images/menu.png" class="menu open">
             
-            <ul class="smallbar">
+            <ul class="smallbar close">
 
-                <li><a href="#1">HOME</a></li>
+                <li ><a href="#1" >HOME</a></li>
 
-                <li><a href="#2">ABOUT ME</a></li>
+                <li><a href="#2" >ABOUT ME</a></li>
 
-                <li><a href="#2" onclick="opentab('exp')">Projects</a></li>
+                <li><a href="#2"onclick="opentab('exp')">Projects</a></li>
 
-                <li><a href="#4">CONTACT ME</a></li>
+                <li><a href="#4" >CONTACT ME</a></li>
             </ul>
 
         </div>
@@ -43,26 +41,22 @@
     <section class="first" id="1">
         <div class="firstbox">
 
-            <p>Hi, i'm a Front end devloper</p>
-            <h1>MY NAME IS <span>VISHAL</span><br>BEHAL FROM INDIA</h1>
+            <p>Hi, i'm a Frontend Developer</p>
+            <h1>My name is  <span>VISHAL</span><br>BEHAL &
+                 I'm from INDIA</h1>
             <a href="images/Vishal_Behal_Resume.pdf" download>
                 <button class="cv">
                     DOWNLOAD C.V
                 </button>
             </a>
-
-
-
-
-
-        </div>
+           </div>
         <img src="images/Picsart_23-02-05_13-21-28-086.png" alt="">
 
     </section>
 
 
     <section class="second" id="2">
-        <div>
+        <div class="imgsec" >
             <img src="images/third.jpg" alt="">
         </div>
         <div class="secondbox">
@@ -72,6 +66,10 @@
                 challenging organisation to utilize my skills and knowledge to work for the growth of the organisation
             </p>
             <div class="tab-tittle">
+                <div class="alert">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                    <strong>click on EXPERIENCE & PROJECTS , EDUCATION FOR MORE</strong>
+                </div>  
                 <P class="tab-links active-link" onclick="opentab('skills')">SKILLS</P>
                 <p class="tab-links" onclick="opentab('exp')">EXPERIENCE & Projects</p>
                 <p class="tab-links" onclick="opentab('edu')">EDUCATION</p>
@@ -90,6 +88,9 @@
             </div>
             <div class="tab-contents" id="exp">
                 <p>i'm a fresher but here is some my project</p>
+
+               
+
                 <p>
                     <a href="https://vishalbehl25.github.io/interiorvishal/" class="exp-para">
                         INTERIOR DESIGN
@@ -118,13 +119,23 @@
     <section class="third" id="4">
         <div class="thirdbox">
             <h1>STAY CONNECTED</h1>
-            <button class="cv"><a href="http://wa.me/+919953222731">
-                    <i class="fa-brands fa-whatsapp fa-1x"></i> whatsapp</a>
+            <a href="http://wa.me/+919953222731">
+            <button class="cv">
+                    <i class="fa-brands fa-whatsapp fa-1x"></i> whatsapp
             </button>
-            <button class="cv"><a href="mailto:vishalbehl25@gmail.com">
-                    <i class="fa-regular fa-envelope"></i> Gmail</a>
+        </a>
+            <a href="mailto:vishalbehl25@gmail.com">
+            <button class="cv">
+                    <i class="fa-regular fa-envelope"></i> Gmail
             </button>
+        </a>
+
+
         </div>
+
+
+
+
         <h1 class="num">mob. no. - 9953222731</h1>
     </section>
 
@@ -147,13 +158,21 @@
         }
 
 
-        var menu = document.querySelector(".menu");
+        var close = document.querySelector(".close");
+        var open = document.querySelector(".open");
         var smallbar = document.querySelector(".smallbar");
 
-        menu.onclick = function () {
+        open.onclick = function () {
             smallbar.classList.toggle("bigbar");
-            cut.classList.toggle("cutt");
+          
             menu.classList.toggle("menuu");
+            
+        }
+       
+        close.onclick = function () {
+            smallbar.classList.toggle("bigbar");
+          
+            menu.classList.toggle("menuu");s
             
         }
        
