@@ -27,7 +27,7 @@ nav {
     display: flex;
     justify-content: space-between;
     position: sticky;
-    z-index: 1;
+    z-index: 2;
 
 }
 
@@ -257,10 +257,24 @@ nav {
         display: flex;
         flex-direction: column;
         text-align: center;
-      
-
-
+    
     }
+
+    .rightside li {
+        list-style: none;
+        background-color:red;
+        border: 0;
+        border-radius: 0;
+        border-color: rgb(255, 255, 255);
+        transition: .5s ease-in;
+    }
+    .rightside li:hover {
+    border: 0;
+background-color: red;    }
+
+
+
+
     .smallbar {width: 0;
     transition: .5s;
    
@@ -298,8 +312,8 @@ nav {
         flex-direction: column-reverse;
     }
 
-    .second img {
-        padding-top: 80%;
+    .imgsec {
+        margin-top: 80%;
         padding-left: 15px;
     }
 
@@ -327,22 +341,52 @@ nav {
     }
 
 
-    .rightside .menu ,.rightside .cut{
+    .rightside .menu {
       
         background-color: aliceblue;
         border-radius: 50%;
         margin-left: 50px;
+        display: block;
     }
-    .rightside .menu{display: block;}
+    
     .rightside .menuu{display: none;}
 
 
-    .rightside .cut{display: none;}
-
-    .rightside .cutt{display: block;}
+   
  
 
 
 
 
+    
+
+
+
+
 }
+
+
+.alert {
+    width: 65%;
+    padding: 20px;
+    background-color: #fa0000;
+    color: white;
+   position: absolute;
+   z-index: 1;
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+   
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
