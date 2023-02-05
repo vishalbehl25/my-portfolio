@@ -264,7 +264,7 @@ nav {
     }
     .smallbar {width: 0;
     transition: .5s;
-    margin: 80px;
+   
    
     }
     .bigbar {width: 250px;
@@ -278,18 +278,20 @@ nav {
         flex-direction: column;
         margin: 0;
         padding-left: 100px;
-
+        
     }
 
     .firstbox {
         text-align: center;
-
+        padding: 0;
+        margin-right: 100px;
     }
 
     .first img {
         width: 100%;
         padding: 20px;
-        padding-right: 150px;
+        margin-right: 100px;
+    
     }
 
     .second {
@@ -320,7 +322,7 @@ nav {
     }
 
     .third {
-        margin-top: 250px;
+        padding-top: 350px;
     }
 
 
@@ -338,12 +340,6 @@ nav {
 
     .rightside .cutt{display: block;}
  
-
-
-
-
-
-
 
 
 
