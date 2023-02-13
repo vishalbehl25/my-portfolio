@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+
+
+body {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+nav {
+    background: rgb(0, 0, 0);
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 2;
+
+}
+
+.logo {
+    margin-left: 10%;
+    width: 190px;
+    height: 70px;
+}
+
+.rightside img {
+    display: none;
+
+}
+
+.rightside {
+    display: flex;
+    width: 100dvh;
+
+
+}
+
+.rightside ul {
+    display: flex;
+}
+
+.rightside a {
+
+    padding: 4px;
+
+}
+
+.rightside li {
+    list-style: none;
+    background-color: rgb(221, 0, 0);
+    margin: 30px 30px;
+    border: solid 2px rgb(239, 237, 237);
+    border-radius: 20px;
+    border-color: rgb(255, 255, 255);
+    transition: .5s ease-in;
+}
+
+
+
+.rightside li:hover {
+    border: solid 2px rgb(255, 255, 255);
+    background-color: blue;
+}
+
+.cv {
+    color: white;
+    margin-top: 20px;
+    background-color: rgb(221, 0, 0);
+    width: 220px;
+    font-size: 20px;
+    transition: .5s ease-in;
+    border-color: white;
+    cursor: pointer;
+    border-radius: 20px;
+
+}
+
+.cv:hover {
+    background-color: blue;
+}
+
+
+
+.first {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 40px;
+
+}
+
+.firstbox span {
+    color: red;
+    font-size: 50px;
+
+}
+
+.firstbox {
+    font-size: 25px;
+
+}
+
+.first img {
+    width: 28pc;
+    border-radius: 120px;
+}
+
+.second img {
+    width: 28pc;
+}
+
+.second {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+
+    height: 50em;
+
+}
+
+.secondbox {
+
+    font-size: 25px;
+    padding-left: 120px;
+}
+
+
+
+.secondbox h1 {
+    text-align: center;
+
+
+}
+
+.tab-tittle {
+    justify-content: space-between;
+    display: flex;
+    margin: 20px 0 40px;
+
+
+}
+
+
+
+.tab-links {
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: "";
+    width: 0;
+    height: 5px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    line-height: 200px;
+    transition: 0.9s;
+}
+
+.active-link::after {
+    width: 50%;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+
+
+
+
+.exp-para {
+
+    margin-top: 20px;
+    font-size: 30px;
+    color: red;
+    transition: 0.9s;
+
+}
+
+.exp-para:hover {
+    color: blue;
+}
+
+
+
+.edu p {
+    padding-left: 15px;
+}
+
+.edu h3 {
+    color: rgb(220, 0, 0);
+}
+
+
+
+
+
+/* --------------------THIRD--------------------- */
+
+
+
+
+.third {
+    height: 50vh;
+    text-align: center;
+}
+
+.thirdbox h1 {
+    text-align: center;
+}
+
+.num {
+    margin: 20px;
+}
+
+
+
+
+
+/*                responsive                      */
+
+@media only screen and (max-width: 920px) {
+
+
+
+    .logo {
+        padding-left: 90px;
+        margin-left: 0;
+    }
+
+
+    .rightside ul {
+        background: red;
+        position: fixed;
+        right: 0;
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .rightside li {
+        list-style: none;
+        background-color: red;
+        border: 0;
+        border-radius: 0;
+        border-color: rgb(255, 255, 255);
+        transition: .5s ease-in;
+    }
+
+    .rightside li:hover {
+        border: 0;
+        background-color: red;
+    }
+
+
+
+
+    .smallbar {
+        width: 0;
+        transition: .5s;
+
+
+    }
+
+    .bigbar {
+        width: 250px;
+
+    }
+
+
+
+
+    .first {
+        padding-top: 50px;
+        flex-direction: column-reverse  ;
+        margin-bottom: 150px;
+    }
+
+    .firstbox {
+       
+        text-align: center;
+    }
+
+    .first img {
+        width: 20pc;
+    }
+
+
+
+    .second {
+        flex-direction: column;
+
+
+    }
+
+
+
+
+    .secondbox {
+        font-size: 20px;
+        padding-left: 20px;}
+
+    .second img {
+
+        width: 22pc;
+      
+    }
+
+    .aboutp {
+
+        text-align: center;
+    }
+
+
+    .tab-tittle {
+        flex-direction: column;
+        line-height: 40px;
+    }
+
+    .third {
+        margin-top: 120px;
+    }
+
+
+
+    .rightside .menu {
+
+        background-color: aliceblue;
+        border-radius: 50%;
+        margin-left: 50px;
+        display: block;
+    }
+
+    .rightside .menuu {
+        display: none;
+    }
+
+
+
+
+
+}
+
+
+.alert {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fa0000;
+    color: white;
+
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.closebtn:hover {
+    color: black;
+}
