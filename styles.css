@@ -319,8 +319,7 @@ nav {
     .second {
         flex-direction: column;
 
-
-height: 1000px;
+        height: 300%;
 
     }
 
